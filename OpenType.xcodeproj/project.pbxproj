@@ -6,11 +6,59 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		012786B12FB7B1C000701DA6 /* OpenTypeKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 012786AA2FB7B1C000701DA6 /* OpenTypeKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		012786AF2FB7B1C000701DA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0131787E2F69D02C0053E0B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 012786A92FB7B1C000701DA6;
+			remoteInfo = OpenTypeKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		012786B22FB7B1C000701DA6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				012786B12FB7B1C000701DA6 /* OpenTypeKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		012786AA2FB7B1C000701DA6 /* OpenTypeKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OpenTypeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		012786B72FB7B21400701DA6 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		013178862F69D02C0053E0B2 /* OpenType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenType.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		012786B52FB7B1C000701DA6 /* Exceptions for "OpenTypeKeyboard" folder in "OpenTypeKeyboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 012786A92FB7B1C000701DA6 /* OpenTypeKeyboard */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		012786AB2FB7B1C000701DA6 /* OpenTypeKeyboard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				012786B52FB7B1C000701DA6 /* Exceptions for "OpenTypeKeyboard" folder in "OpenTypeKeyboard" target */,
+			);
+			path = OpenTypeKeyboard;
+			sourceTree = "<group>";
+		};
 		013178882F69D02C0053E0B2 /* OpenType */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = OpenType;
@@ -19,6 +67,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		012786A72FB7B1C000701DA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		013178832F69D02C0053E0B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,7 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				013178882F69D02C0053E0B2 /* OpenType */,
+				012786AB2FB7B1C000701DA6 /* OpenTypeKeyboard */,
 				013178872F69D02C0053E0B2 /* Products */,
+				012786B72FB7B21400701DA6 /* Secrets.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				013178862F69D02C0053E0B2 /* OpenType.app */,
+				012786AA2FB7B1C000701DA6 /* OpenTypeKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +106,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		012786A92FB7B1C000701DA6 /* OpenTypeKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012786B62FB7B1C000701DA6 /* Build configuration list for PBXNativeTarget "OpenTypeKeyboard" */;
+			buildPhases = (
+				012786A62FB7B1C000701DA6 /* Sources */,
+				012786A72FB7B1C000701DA6 /* Frameworks */,
+				012786A82FB7B1C000701DA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				012786AB2FB7B1C000701DA6 /* OpenTypeKeyboard */,
+			);
+			name = OpenTypeKeyboard;
+			packageProductDependencies = (
+			);
+			productName = OpenTypeKeyboard;
+			productReference = 012786AA2FB7B1C000701DA6 /* OpenTypeKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		013178852F69D02C0053E0B2 /* OpenType */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 013178912F69D02F0053E0B2 /* Build configuration list for PBXNativeTarget "OpenType" */;
@@ -55,10 +135,12 @@
 				013178822F69D02C0053E0B2 /* Sources */,
 				013178832F69D02C0053E0B2 /* Frameworks */,
 				013178842F69D02C0053E0B2 /* Resources */,
+				012786B22FB7B1C000701DA6 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				012786B02FB7B1C000701DA6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				013178882F69D02C0053E0B2 /* OpenType */,
@@ -80,6 +162,9 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					012786A92FB7B1C000701DA6 = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					013178852F69D02C0053E0B2 = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -100,11 +185,19 @@
 			projectRoot = "";
 			targets = (
 				013178852F69D02C0053E0B2 /* OpenType */,
+				012786A92FB7B1C000701DA6 /* OpenTypeKeyboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		012786A82FB7B1C000701DA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		013178842F69D02C0053E0B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +208,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		012786A62FB7B1C000701DA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		013178822F69D02C0053E0B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +224,73 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		012786B02FB7B1C000701DA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 012786A92FB7B1C000701DA6 /* OpenTypeKeyboard */;
+			targetProxy = 012786AF2FB7B1C000701DA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		012786B32FB7B1C000701DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 012786B72FB7B21400701DA6 /* Secrets.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F485M2N7DD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenTypeKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OpenTypeKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HamzaBinMubeen.OpenType.OpenTypeKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		012786B42FB7B1C000701DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 012786B72FB7B21400701DA6 /* Secrets.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F485M2N7DD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenTypeKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OpenTypeKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HamzaBinMubeen.OpenType.OpenTypeKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		0131788F2F69D02F0053E0B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -251,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F485M2N7DD;
@@ -268,6 +435,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = HamzaBinMubeen.OpenType;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -283,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F485M2N7DD;
@@ -300,6 +469,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = HamzaBinMubeen.OpenType;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -313,6 +483,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		012786B62FB7B1C000701DA6 /* Build configuration list for PBXNativeTarget "OpenTypeKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012786B32FB7B1C000701DA6 /* Debug */,
+				012786B42FB7B1C000701DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		013178812F69D02C0053E0B2 /* Build configuration list for PBXProject "OpenType" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
